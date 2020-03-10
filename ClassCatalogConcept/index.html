@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Class Catalog</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <img src="asuLogo.png" alt="ASU logo">
+                <h1>Class Catalog Maintenance</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">ASU Home</a></li>
+                        <li><a href="#">My ASU</a></li>
+                        <li><a href="#">Colleges &amp; Schools ▼</a></li>
+                        <li><a href="#">Maps &amp; Locations ▼</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">SIGN OUT</a></li>
+                    </ul>
+                </nav>
+                <input type="search" placeholder="Search...">
+            </header>
+            <main>
+                <section>
+                    <h2>Add a Class</h2>
+                    <form>
+                        <label for="name">Class Name:</label>
+                        <input type="text" id="name">
+                        <label for="number">Class Number:</label>
+                        <input type="text" id="number">
+                        <label for="date">Start Date:</label>
+                        <input type="date" id="date">
+                        <label for="length">Class Length (in weeks):</label>
+                        <select id="length">
+                            <option value="-">-</option>
+                            <option value="8weeks">8 weeks</option>
+                            <option value="16weeks">16 weeks</option>
+                        </select>
+                        <label for="weekday">Weekday and Time:</label>
+                        <select id="weekday">
+                            <option value="-">-</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <select id="time">
+                            <option value="-">-</option>
+                            <option value="9:00am - 10:45am">9:00am - 10:45am</option>
+                            <option value="11:00am - 12:45pm">11:00am - 12:45pm</option>
+                            <option value="1:00pm - 2:45pm">1:00pm - 2:45pm</option>
+                            <option value="3:00pm - 4:45pm">3:00pm - 4:45pm</option>
+                            <option value="5:00pm - 6:45pm">5:00pm - 6:45pm</option>
+                            <option value="7:00pm - 8:45pm">7:00pm - 8:45pm</option>
+                        </select>
+                        <label for="description">Class Description</label>
+                        <textarea id="description"></textarea>
+                        <button type="button" value="add" id="add">Add Class</button>
+                        <button type="button" value="clear" id="clear">Clear Form</button>
+                </section>
+                <section id="classes">
+                    <h2>Classes</h2>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Name</th>
+                                <th>Number</th>
+                                <th>Start Date</th>
+                                <th>Length</th>
+                                <th>Weekday</th>
+                                <th>Time</th>
+                                <th>Description</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+            <footer>
+                <p>Copyright © 2017 Adam Prinz - This is for educational purposes only.</p>
+            </footer>
+        </div>
+    </body>
+</html>
