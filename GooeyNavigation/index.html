@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Adam Prinz | Software Engineer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Adam Prinz</h1>
+                <h2>Software Engineer</h2>
+                <nav class="accessibility">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="goo-menu">
+                    <div id="goo">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="goo-open">
+                        <li id="about" class="goo-item"><a>About</a></li>
+                        <div id="about-item">
+                            <div class="about-description">
+                                <h3>About</h3>
+                                <p>Insert About</p>
+                            </div>
+                        </div>
+                        <li id="work" class="goo-item"><a>Work</a></li>
+                        <div id="work-item">
+                            <div class="work-description">
+                                <h3>Portfolio Cube</h3>
+                                <p>Constructed a responsive interactive cube in three-dimensional space with a variety of hyperlinked scalable vector graphic faces.</p>
+                                <a class="demo" href="/Cube">Demo</a>
+                            </div>
+                            <div class="work-description">
+                                <h3>Midi Fighter</h3>
+                                <p>Programmed a responsive 5x5 sound board with correlating rotating color patterns using JavaScript.</p>
+                                <a class="demo" href="/MidiFighterJavaScript">Demo</a>
+                            </div>
+                            <div class="work-description">
+                                <h3>Tipsy</h3>
+                                <p>A thirty-eight page fully responsive catalog of cocktail recipes that included CSS animations and abides by government accessibility standard.</p>
+                                <a class="demo" href="/Tipsy">Demo</a>
+                            </div>
+                        </div>
+                        <li id="contact" class="goo-item"><a>Contact</a></li>
+                        <ul>
+                            <li class="goo-item contact-item"><a>Email</a></li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="goo-effect">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo-effect" />
+                            <feComposite in="SourceGraphic" in2="goo-effect" operator="atop"/>
+                            </filter>
+                        </defs>
+                    </svg>
+                </section>
+                <script src="scripts.js"></script>
+            </main>
+            <footer>
+                <p id="copyright">Copyright &copy; 2018 adamprinz.com</p>
+            </footer>
+        </div>
+    </body>
+</html>
