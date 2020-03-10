@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Captain Fatty's Brewery | Contact</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Ye can contact Captain Fatty’s with any questions you may have. Throw a bottle with your message into the sea or use our contact form below.">
+        <meta name="keywords" content="Captain Fatty's, Brewery, Santa Barbara, Goleta, California, Craft Beer, Contact, Address, Hours, Map, Form, Message">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+        <![endif]-->
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="hours">
+                Hours | Mon - Thurs 3:30-9 | Fri 3:30-10 | Sat 12-10 | Sun 12-8
+            </div>
+            <header>
+                <h1><a href="index.html#">Captain Fatty's</a></h1>
+                <h2 class="accessibility">Craft Brewery</h2>
+                <nav>
+                    <h2 class="accessibility">Navigation</h2>
+                    <div id="menu-btn">
+                        <span class="hamburgerMenu"></span>
+                        <span class="hamburgerMenu"></span>
+                        <span class="hamburgerMenu"></span>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ontap.html">On Tap</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li class="socialmedia mobileonly"><a href="https://www.facebook.com/captainfattysbeer/" target="_blank"><img class="icon" src="Assets/facebook.png" alt="Follow Captain Fatty's on Facebook"></a></li>
+                        <li class="mobileonly"><a href="https://www.instagram.com/captainfattys/" target="_blank"><img class="icon" src="Assets/instagram.png" alt="Follow Captain Fatty's on Instagram"></a></li>
+                        <li class="mobileonly"><a href="https://twitter.com/CaptainFattys" target="_blank"><img class="icon" src="Assets/twitter.png" alt="Follow Captain Fatty's on Twitter"></a></li>
+                    </ul>
+                </nav>
+                <div id="socialmedia">
+                    <a href="https://www.facebook.com/captainfattysbeer/" target="_blank"><img class="icon" src="Assets/facebook.png" alt="Follow Captain Fatty's on Facebook"></a>
+                    <a href="https://www.instagram.com/captainfattys/" target="_blank"><img class="icon" src="Assets/instagram.png" alt="Follow Captain Fatty's on Instagram"></a>
+                    <a href="https://twitter.com/CaptainFattys" target="_blank"><img class="icon" src="Assets/twitter.png" alt="Follow Captain Fatty's on Twitter"></a>
+                </div>
+                <script src="scripts.js"></script>
+            </header>
+            <img id="wheel" src="Assets/wheel.png" alt="The captain's wheel of a ship">
+            <main>
+                <section id="contactheader">
+                    <h2>Contact</h2>
+                </section>
+                <section id="location">
+                    <h2>Come Visit Us!</h2>
+                    <p>The entrance to our tasting room is in the back of our office front at the roll-up door.</p>
+                    <div id="address">
+                        <h3>Address</h3>
+                        <p>6483 Calle Real, Suite D</p>
+                        <p>Goleta, CA 93117</p>
+                        <a class="tel" href="tel:805-895-6669">805-895-6669</a>
+                        <h3>Hours</h3>
+                        <p>Mon - Thurs 3:30-9</p> 
+                        <p>Fri 3:30-10</p>
+                        <p>Sat 12-10</p>
+                        <p>Sun 12-8</p>
+                    </div>
+                    <div id="map">
+                        <!--Map location javascript is in scripts.js-->
+                        <!--Map functionally requires Google Map's API imported below-->
+                        <!--API Key is null for example purposes-->
+                        <script src="https://maps.googleapis.com/maps/api/js?callback=fattyMap"></script>
+                    </div>
+                </section>
+                <section id="contactform">
+                    <div>
+                        <h2>Contact</h2>
+                        <p>Send us any questions you have! Like beer, we're here for you.</p>
+                        <form method="POST" action="https://webdevbasics.net/scripts/pacific.php">
+                            <label for="firstname" class="accessibility">First Name:</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" required="required">
+                            <label for="lastname" class="accessibility">Last Name:</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required="required">
+                            <label for="email" class="accessibility">Email:</label>
+                            <input type="email" name="email" id="email" size="35" placeholder="Email" required="required">
+                            <label for="subject" class="accessibility">Subject:</label>
+                            <input type="text" name="subject" id="subject" size="35" placeholder="Subject" required="required">
+                            <label for="message" class="accessibility">Message:</label>
+                            <textarea name="message" id="message" rows="2" cols="30" placeholder="Message" required="required"></textarea>
+                            <input class="cta" type="submit" value="Submit">
+                        </form>
+                    </div>
+                </section>    
+            </main>
+            <footer>
+                <div id="sitemap">
+                    <h2>Site Map</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ontap.html">On Tap</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div id="contact">
+                    <h2>CAPTAIN FATTY'S Brewery</h2>
+                    <a class="tel" href="tel:805-895-6669">805-895-6669</a>
+                    <p>6483 Calle Real, Suite D</p>
+                    <p>Goleta, CA 93117</p>
+                    <a class="mail" href="mailto:matt@captainfattys.com">matt@captainfattys.com</a>
+                </div>
+                <div id="socialmedia2">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/captainfattysbeer/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/captainfattys/" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com/CaptainFattys" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+                <p id="copyright">Copyright &copy;2018 Adam Prinz | This site is for educational purposes only.</p>
+            </footer>
+        </div>
+    </body>
+</html>
