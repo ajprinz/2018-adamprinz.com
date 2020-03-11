@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Adam Prinz -->
+        <title>Tipsy | Tipsy Shirt - White</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Let's get Tipsy! Tipsy.com is your new best friend with thousands of cocktail recipes for every occasion and palate.">
+        <link rel="stylesheet" href="/~ajprinz/GIT414/Tipsy/normalize.css">
+        <link rel="stylesheet" href="/~ajprinz/GIT414/Tipsy/styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <a href="/~ajprinz/GIT414/Tipsy/index.html"><h1>Tipsy</h1></a>
+                <a href="/~ajprinz/GIT414/Tipsy/index.html"><img id="logo" src="/~ajprinz/GIT414/Tipsy/Images/tipsyLogo.svg" alt="Tipsy.com logo modeled after a cocktailed called the Cosmopolitan."></a>
+                <nav>
+                    <h2 class="accessibility">Navigation</h2>
+                    <input type="checkbox" id="menu-toggle"/>
+                    <label for="menu-toggle"></label>
+                    <div id="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li><a href="/~ajprinz/GIT414/Tipsy/submitadrink.html">Submit a Drink</a></li>
+                        <li><a href="/~ajprinz/GIT414/Tipsy/shop.html">Shop</a></li>
+                        <li><a href="/~ajprinz/GIT414/Tipsy/cart.html">Cart</a></li>
+                        <li><a href="/~ajprinz/GIT414/Tipsy/index.html">Home</a></li>
+                    </ul>                    
+                </nav>
+                <form>
+                    <input type="search" name="search" id="search" placeholder="Search...">
+                </form>
+            </header>
+            <main id="items">
+                <section>
+                    <h2>Tipsy Tee</h2>
+                    <section>
+                        <img id="image" src="/~ajprinz/GIT414/Tipsy/Shop/Images/tipsyshirt_white.png" alt="A soft white tri-fiber shirt with the Tipsy logo across the chest.">                             
+                        <div id="white">
+                            <h3>Tipsy Tee</h3>
+                            <h4>Description:</h4>
+                            <p class="indent">Our signature super-soft fabrics are specially washed and treated for a one-of-a-kind look and feel. Soft and sexy jersey is washed and treated for a one-of-a-kind feel.</p>
+                            <h4>Price: <span class="indent">$20</span></h4>
+                            <form action="/~ajprinz/GIT414/Tipsy/cart.html">
+                                <label for="color">Color: </label>
+                                <input type="radio" value="white" id="color" checked>
+                                <label for="size">Size: </label>
+                                <select name="size" id="size" required>
+                                    <option value="null"> - </option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                                <label for="quantity">Qty:</label>
+                                <input type="textarea" name="quantity" id="quantity" value="1">
+                                <input type="submit" value="Add to Cart" id="addToCart">
+                                <script src="/~ajprinz/GIT414/Tipsy/scripts.js"></script>
+                            </form>
+                        </div>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <section>
+                    <h2 class="accessibility">Footer</h2>
+                    <nav id="site-map">
+                        <h2>Site Map</h2>
+                        <ul>
+                            <li><a href="/~ajprinz/GIT414/Tipsy/submitadrink.html">Submit a Drink</a></li>
+                            <li><a href="/~ajprinz/GIT414/Tipsy/shop.html">Shop</a></li>
+                            <li><a href="/~ajprinz/GIT414/Tipsy/cart.html">Cart</a></li>
+                            <li><a href="/~ajprinz/GIT414/Tipsy/index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                    <div id="copyright">
+                        <p>Copyright &copy; 2017 Adam Prinz</p>
+                        <p>This site is for educational purposes only.</p>
+                    </div>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>
