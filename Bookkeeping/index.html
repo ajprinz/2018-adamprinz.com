@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127394390-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127394390-1');
+        </script>
+
+        <title>Adam Prinz | Bookkeeping</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
+        <![endif]-->
+
+        <!--Scripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1><a href="#wrapper">Adam Prinz</a></h1>
+                <h2 class="accessibility">Bookkeeping</h2>
+                <nav>
+                    <h2 class="accessibility">Navigation</h2>
+                    <div id="menu-btn">
+                        <span class="hamburgerMenu"></span>
+                        <span class="hamburgerMenu"></span>
+                        <span class="hamburgerMenu"></span>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="intro">
+                    <h2>Hi, I'm Your Personal <span>Bookkeeper</span></h2>
+                    <a href="#contact">Contact Me</a>
+                </section>
+                <section id="howitworks">
+                    <h2>How It Works</h2>
+                    <p>I’m here to help you achieve your financial goals and simplify your bookkeeping. Whether you’re a small business owner, freelancer, or just trying to create a personal budget for some extra money at the end of the month, the process is easy.</p>
+                    <h3>Connect</h3>
+                    <p>If you’re using an accounting software, then I just need to login and get to work. Otherwise, I will consolidate your information in an Excel Spreadsheet to track your finances and generate monthly statements.</p>
+                    <h3>Share</h3>
+                    <p>To ensure your books are accurate, I’ll need some documentation to complete bank reconciliations and possible deductions. Don’t stress, you’ll have your own encrypted folder on Dropbox for maximum security.</p>
+                    <h3>Grow</h3>
+                    <p>I’ll deliver your completed finances along with a summary report at the beginning of every week so you can carry on with confidence. I’ll also be available anytime to answer any questions you may have. You can reach me by phone, text, or email.</p>
+                    <p>Now you can focus on growing your business or throwing that party you’ve been planning.</p>
+                    <img id="leaf1" src="Assets/leaf1.svg" alt="oak leaf">
+                    <img id="leaf2" src="Assets/leaf2.svg" alt="oak leaf">
+                </section>
+                <section id="pricing">
+                    <h2>Pricing</h2>
+                    <p>With experience comes accuracy and speed, that’s why most projects only take a few hours a month.</p>
+                    <div>   
+                        <h3><span>$40</span>/hour</h3>
+                        <ul>
+                            <li>Cash Accounts</li>
+                            <li>Accounts Receivable</li>
+                            <li>Accounts Payable</li>
+                            <li>General Ledger</li>
+                            <li>Journal Entries</li>
+                            <li>Bank Reconciliation</li>
+                            <li>Budgeting</li>
+                            <li>Weekly Summary Report</li>
+                            <li>Monthly Statements</li>
+                            <li>24/7 Communication</li>
+                            <li>Dedication to grow your finances</li>
+                        </ul>
+                    </div> 
+                    <img id="leaf3" src="Assets/leaf3.svg" alt="oak leaf">
+                </section>
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <p>I’d love to hear from you! Feel free to contact me anytime with your questions or just to chat. You can also find me on social media :)</p>
+
+                    <form action="https://adamprinz.com/contact.php" method="post">
+                        <div class="elem-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required onfocus="this.placeholder = ''" onblur="this.placeholder = 'John Doe'">
+                        </div>
+                        <div class="elem-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required onfocus="this.placeholder = ''" onblur="this.placeholder = 'john.doe@email.com'">
+                        </div>
+                        <div class="elem-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="visitor_message" placeholder="What's on your mind?" required onfocus="this.placeholder = ''" onblur="this.placeholder = 'What\'s on your mind?'"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                    <div id="socialmedia">
+                        <ul>
+                            <li><a href="https://twitter.com/mysexysparkles" target="_blank"><img src="Assets/twitter_green.svg" alt="Follow Adam Prinz on Twitter"></a></li>
+                            <li><a href="https://www.instagram.com/mysexysparkles/" target="_blank"><img src="Assets/instagram_green.svg" alt="Follow Adam Prinz on Instagram"></a></li>
+                            <li><a href="https://www.linkedin.com/in/adamprinz/" target="_blank"><img src="Assets/linkedin_green.svg" alt="Follow Adam Prinz on Linkedin"></a></li>
+                            <li><a href="mailto:adamjosephprinz@gmail.com"><img src="Assets/email_green.svg" alt="Email Adam Prinz"></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p id="copyright">Copyright &copy; 2019 adamprinz.com</p>
+            </footer>
+        </div>
+    </body>
+</html>
