@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bark Alert | Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="BarkAlertLogo.svg" alt="Bark Alert Logo" id="logo"></a>
+            <h2>“We have warm hearts for cold noses.”</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="howitworks.html">How It Works</a>
+                <a href="purchase.html" class="active">Purchase</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href=""><img id="cart" class="shrink" src="cart.jpg" onclick="addToCart()"></a>
+        </header>
+        
+        <main>
+            <div id="block1">
+               <h2 class="blockText">Purchase</h2>
+            </div>
+            
+            <div id="donate">
+                 <img id="Humane" src="ahs.png" alt="Arizona Humane Society Logo">
+                
+                <p>With every Bark Alert Device purchased, part of the procedes go to the Arizona Humane Society. </p>
+            </div>
+            
+            <div id="product">
+                <div id="views">
+                    <div class="slider">
+                        <p class="left" onclick="sliderLeft()">◀</p>
+                        <img id="prototype" src="Team%207%20-%20Prototype%201.png" alt="Silver Prototype">
+                        <img id="engraved" src="collarEngraving.png" alt="Engraved Prototype">
+                        <img id="mockup" src="collarCollarMockup.png" alt="collar mockup">
+                        <p class="right" onclick="sliderRight()">▶</p>
+                    </div>
+                </div>
+                
+                <div id="options">
+                    <h2>Bark Alert Device Options</h2>
+                    
+                    <ul>
+                        <li><input type="checkbox" name="device" id="device">Bark Alert Device [$25.00]</li>
+
+                        <li><input type="checkbox" name="collar" id="collar">Add Collar [+$10.00]</li>
+
+                        <li><input type="checkbox" name="customize" id="customize">Customize Device [+$5.00]</li>
+                    </ul>
+                    
+                    <button type="button" onclick="addToCart()">Add to cart</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+             <ul>
+                <li>
+                    <ul id="footerNav">
+                        <li class="underline">Site Map</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howitworks.html">How It Works</a></li>
+                        <li><a href="purchase.html">Purchase</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="email" class="underline" href="mailto:BarkAlert@gmail.com">BarkAlert@gmail.com</a>
+                </li>
+
+                <li>
+                    <a id="phone" class="underline" href="tel:1-800-555-WOOF">1-800-555-WOOF</a>
+                </li>
+
+                <li>
+                    <div id="socialIcons">
+                        <img class="shrink" src="facebookshareicon.png">
+                        <img class="shrink" src="instagramshareicon.png">
+                        <img class="shrink" src="pintrestshareicon.png">
+                        <img class="shrink" src="twittershareicon.png">
+                    </div>
+                </li>
+             </ul>
+        </footer>
+        
+        <script src="jquery-3.2.0.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

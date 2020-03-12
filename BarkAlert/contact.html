@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bark Alert | Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="BarkAlertLogo.svg" alt="Bark Alert Logo" id="logo"></a>
+            <h2>“We have warm hearts for cold noses.”</h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="howitworks.html">How It Works</a>
+                <a href="purchase.html">Purchase</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <a href=""><img id="cart" class="shrink" src="cart.jpg" onclick="addToCart()"></a>
+        </header>
+        
+        <main>
+            <div id="block1_Contact">
+                <p class="blockText_Contact">If you have any questions or suggestions about our product, send us a message below.</p>
+            </div>
+            
+            <div id="background">
+                <form action="http://webdevbasics.net/scripts/demo.php" method="post">
+                    <label for="myName">Name:</label>
+                    <input type="text" name="myName" id="myName" required="required">
+
+                    <label for="myEmail">Email:</label>
+                    <input type="email" name="myEmail" id="myEmail">
+
+                    <label for="myPhone">Phone:</label>
+                    <input type="tel" name="myPhone" id="myPhone">
+
+                    <label for="myZip">Zip:</label>
+                    <input type="text" name="myZip" id="myZip" required="required">
+
+                    <label for="myMessage">Message:</label>
+                    <textarea id="myMessage"></textarea>
+                    
+                    <button type="reset" value="Reset">Reset</button>
+                    
+                    <button type="submit" value="Submit">Submit</button>
+                </form>
+            </div>    
+        </main>
+        
+        <footer>
+            <ul>
+                <li>
+                    <ul id="footerNav">
+                        <li class="underline">Site Map</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howitworks.html">How It Works</a></li>
+                        <li><a href="purchase.html">Purchase</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="email" class="underline" href="mailto:BarkAlert@gmail.com">BarkAlert@gmail.com</a>
+                </li>
+
+                <li>
+                    <a id="phone" class="underline" href="tel:1-800-555-WOOF">1-800-555-WOOF</a>
+                </li>
+
+                <li>
+                    <div id="socialIcons">
+                        <img class="shrink" src="facebookshareicon.png">
+                        <img class="shrink" src="instagramshareicon.png">
+                        <img class="shrink" src="pintrestshareicon.png">
+                        <img class="shrink" src="twittershareicon.png">
+                    </div>
+                </li>
+            </ul>
+        </footer>
+        
+        <script src="jquery-3.2.0.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

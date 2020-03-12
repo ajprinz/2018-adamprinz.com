@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bark Alert | Home</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="BarkAlertLogo.svg" alt="Bark Alert Logo" id="logo"></a>
+            <h2>“We have warm hearts for cold noses.”</h2>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="howitworks.html">How It Works</a>
+                <a href="purchase.html">Purchase</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href=""><img id="cart" class="shrink" src="cart.jpg" onclick="addToCart()"></a>
+        </header>
+        
+        <main>
+            <div id="block1">
+                <p class="blockText">"On a 78-degree day, the temperature inside a parked car can soar to between 100 and 120 degrees in just minutes, and on a 90-degree day, the interior temperature can reach as high as <span class="bold">160 degrees in less than 10 minutes</span>."</p>
+            </div>
+            
+            <div id="quiz">
+                <div id="q1">
+                    <p>What is the only way dogs can circulate air to cool down their body?</p>
+                    <button type="button" class="answer" onclick="nextQuestion()">Running</button>
+                    <button type="button" class="answer" onclick="correct(),nextQuestion()">Panting</button>
+                    <button type="button" class="answer" onclick="nextQuestion()">Tail Wagging</button>
+                    <div class="dogpic"></div>
+                </div>
+                <div id="q2">
+                    <p>A dog's body temperature is normally around 101ºF. At what body temperature does a dog reach severe heat stroke?</p>
+                    <button type="button" class="answer" onclick="correct(),nextQuestion()">106ºF</button>
+                    <button type="button" class="answer" onclick="nextQuestion()">115ºF</button>
+                    <button type="button" class="answer" onclick="nextQuestion()">130ºF</button>
+                    <div class="dogpic"></div>
+                </div>
+                <div id="q3">
+                    <p>Does rolling down the windows for your dog decrease the interior temperature of the vehicle?</p>
+                    <button type="button" class="answer" onclick="nextQuestion()">Yep</button>
+                    <button type="button" class="answer" onclick="correct(),nextQuestion()">Nope</button>
+                    <button type="button" class="answer" onclick="nextQuestion()">A Little</button>
+                    <div class="dogpic"></div>
+                </div>
+                <div id="q4">
+                    <p>Never leave your dog in the car, but before an accident happens what can give you peace of mind?</p>
+                    <button type="button" class="answer" onclick="nextQuestion()">The Local Vet</button>
+                    <button type="button" class="answer" onclick="nextQuestion()">Passersby</button>
+                    <button type="button" class="answer" onclick="correct(),nextQuestion()">Bark Alert</button>
+                    <div class="dogpic"></div>
+                </div>
+                <div id="result">
+                    <!--populated by javascript--->
+                </div>
+            </div>
+            
+            <div id="block2">
+                <img id="info3" src="infograph3.png">
+            </div>
+            
+            <div id="preBlock3">
+                <p class="blockText">Leaving pets locked in cars is never safe. But when the weather gets warmer, it can be deadly. High temperatures can cause irreparable organ damage and even death. Protecting animals from an unnecessary death is a problem we can all agree to prevent.</p>
+            </div>
+            
+            <div id="block3">
+                <iframe src="http://www.nbcnews.com/widget/video-embed/302531651955" frameborder="0" allowfullscreen></iframe>
+                
+                <div id="facts">
+                    <h2>Facts</h2>
+                    <ol>
+                        <li>When it's 72 degrees Fahrenheit outside, the temperature inside your car can heat up to 116 degrees Fahrenheit within an hour.</li>
+                        <li>When it's 80 degrees Fahrenheit outside, the temperature inside your car can heat up to 99 degrees Fahrenheit within 10 minutes.</li>
+                        <li>Rolling down the windows has been shown to have little effect on the temperature inside a car.</li>
+                    </ol>
+                </div>
+            </div>
+            
+            
+            <div id="block4">
+                    <h2>Mission Statement</h2>
+                    <p>Our mission as the Bark Alert team is to ensure the safety of dogs all around the world. We want to get our product attached to every dog collar, so no dog will ever be harmed by warm temperatures of cars.</p>
+                    
+                    <h2>Our Solution</h2>
+                    <p>To solve the problem, we have a collar attachment that sends an alert to the app in real time when a harmful temperature is reached.</p>
+                    
+                    <p>To go along with our collar attachment, we created an app to monitor your dog's temperature, as well as provide emergency numbers and locations of vets nearest to you.</p>
+                
+                <img id="appPic" src="app_1.jpg">
+            </div>
+        </main>
+        
+        <footer>
+            <ul>
+                <li>
+                    <ul id="footerNav">
+                        <li class="underline">Site Map</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="howitworks.html">How It Works</a></li>
+                        <li><a href="purchase.html">Purchase</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="credits.html">Credits</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="email" class="underline" href="mailto:BarkAlert@gmail.com">BarkAlert@gmail.com</a>
+                </li>
+
+                <li>
+                    <a id="phone" class="underline" href="tel:1-800-555-WOOF">1-800-555-WOOF</a>
+                </li>
+
+                <li>
+                    <div id="socialIcons">
+                        <img class="shrink" src="facebookshareicon.png">
+                        <img class="shrink" src="instagramshareicon.png">
+                        <img class="shrink" src="pintrestshareicon.png">
+                        <img class="shrink" src="twittershareicon.png">
+                    </div>
+                </li>
+            </ul>
+        </footer>
+        
+        <script src="jquery-3.2.0.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

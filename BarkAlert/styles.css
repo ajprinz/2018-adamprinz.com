@@ -1,0 +1,695 @@
+body {
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+#logo {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+header {
+    width: 100%;
+    height: 149px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 8;
+    transition: 0.11s;
+}
+
+header h2 {
+    position: absolute;
+    top: 140px;
+    z-index: 1;
+    color: #fff;
+    margin: 15px 0 0 130px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    background-color: #fff;
+    border-bottom: 4px solid #61120C;
+    margin-top: -80px;
+    padding: 30px 0 25px 190px;
+    transition: 0.11s;
+}
+
+nav a {
+    width: 9%;
+    margin: -25px 0;
+    padding: 10px 10px 26px 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    display: inline-block;
+}
+
+
+nav a:hover {
+    color: #fff;
+    background-color: #c32026;
+    transition: 0.5s;
+}
+
+.active {
+    color: #fff;
+    background-color: #c32026;
+}
+
+#cart {
+    position: absolute;
+    top: 92px;
+    right: 10%;
+}
+
+main {
+    margin-top: 140px;
+}
+
+/*--------------------- Home page ---------------------------*/
+
+#block1 {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    position: relative;
+    background-color: #191919;
+}
+
+.blockText {
+    width: 85%;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: thin;
+    line-height: 35px;
+    color: #ffc518;
+    text-align: center;
+}
+
+span.bold {
+    font-weight: bolder;
+}
+
+#quiz {
+    width: 100%;
+    height: 300px;
+    padding-top: 60px;
+    background-color: #FFC518;
+    position: relative;
+    overflow: hidden;
+}
+
+#q1 {
+    display: block;
+}
+
+#q1 p {
+    width: 50%;
+    position: absolute;
+    left: 1%;
+    top: 120px;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+}
+
+#q1 .dogpic {
+    background-image: url(dog1dark.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 360px;
+}
+
+#q1 .answer {
+    display: block;
+    width: 30%;
+    height: 70px;
+    padding: 30px;
+    margin: 0 10% 20px auto;
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: #000;
+}
+
+#q1 .answer:hover {
+    color: #fff;
+}
+
+#q2 {
+    display: none;
+}
+
+#q2 p {
+    width: 48%;
+    position: absolute;
+    left: 1%;
+    top: 120px;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 23px;
+    color: #fff;
+    z-index: 1;
+}
+
+#q2 .dogpic {
+    background-image: url(dog2dark.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 360px;
+}
+
+#q2 .answer {
+    display: block;
+    width: 30%;
+    height: 70px;
+    padding: 30px;
+    margin: 0 10% 20px auto;
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: #000;
+}
+
+#q2 .answer:hover {
+    color: #fff;
+}
+
+#q3 {
+    display: none;
+}
+
+#q3 p {
+    width: 48%;
+    position: absolute;
+    left: 1%;
+    top: 120px;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+}
+
+#q3 .dogpic {
+    background-image: url(dog3dark.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 360px;
+}
+
+#q3 .answer {
+    display: block;
+    width: 30%;
+    height: 70px;
+    padding: 30px;
+    margin: 0 10% 20px auto;
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: #000;
+}
+
+#q3 .answer:hover {
+    color: #fff;
+}
+
+#q4 {
+    display: none;
+}
+
+#q4 p {
+    width: 50%;
+    position: absolute;
+    left: 1%;
+    top: 120px;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+}
+
+#q4 .dogpic {
+    background-image: url(dog4dark.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 360px;
+}
+
+#q4 .answer {
+    display: block;
+    width: 30%;
+    height: 70px;
+    padding: 30px;
+    margin: 0 10% 20px auto;
+    font-size: 150%;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    color: #000;
+}
+
+#q4 .answer:hover {
+    color: #fff;
+}
+
+
+#result {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 140px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 300%;
+    font-weight: 800;
+    color: #c32026;
+}
+
+#block2 {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 50px 0 40px 0;
+}
+
+#info3 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 400px;
+}
+
+#preBlock3 {
+    width: 100%;
+    padding: 100px 0 100px 0;
+    position: relative;
+    background-color: #191919;
+}
+
+#block3 {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    background-color: #C32026;
+}
+
+#facts {
+    width: 40%;
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: thin;
+    font-size: 100%;
+    line-height: 130%;
+    color: #fff;
+}
+
+#facts li {
+    padding: 10px;
+}
+
+iframe {
+    width: 50%;
+    height: 450px;
+}
+
+#block4 {
+    width: 100%;
+    position: relative;
+    padding: 50px 0 40px 0;
+}
+
+#block4 h2, #block4 p {
+    width: 49%;
+    margin: 30px 0 0 30px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+}
+
+#appPic {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    right: 7%;
+}
+
+/*--------------------- end Home page ---------------------------*/
+
+/*--------------------- How It Works page ---------------------------*/
+
+#intro {
+    width: 100%;
+    height: 300px;
+    display: block;
+    background-color: #FFC518;
+    position: relative;
+}
+
+#intro h3 {
+    max-width: 48%;
+    display: inline-block;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+}
+
+#intro p {
+    max-width: 48%;
+    display: block;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: thin;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    float: left;
+    margin: 120px auto 0 2%;
+}
+
+#intro video {
+    max-width: 48%;
+    height: 100%;
+    margin: 0 auto;
+    float: right;
+    display: block;
+    background-color: #000;
+}
+
+#steps {
+    width: 100%;
+    height: 300px;
+    display: block;
+    background-color: #F57E20;
+    position: relative;
+    padding: 40px 0;
+}
+
+#steps table {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+#steps td {
+    width: 33%;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+
+#steps img {
+    width: 200px;
+}
+
+/*--------------------- end How it Works page ---------------------------*/
+
+/*--------------------- Purchase page ---------------------------*/
+
+#donate {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#Humane {
+    width: 400px; 
+    max-height: 300px;
+}
+
+#product {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+#views {
+    width: 49%;
+}
+
+#views .slider {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    margin: 50px 0 auto auto;
+}
+
+.slider .left {
+    width: 25px;
+    padding: 100px 0;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #adadad;
+    background-color: #dedede;
+    opacity: .5;
+}
+
+.slider .right {
+    width: 25px;
+    padding: 100px 0;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #adadad;
+    background-color: #dedede;
+    opacity: .5;
+}
+
+#prototype {
+    width: 250px;
+    margin: 50px 55px;
+}
+
+#engraved {
+    width: 250px;
+    margin: 50px 55px;
+    display: none;
+}
+
+#mockup {
+    width: 250px;
+    margin: 50px 55px;
+    display: none;
+}
+
+#options {    
+    width: 46%;
+    margin: -260px auto auto 0;
+    float: right;
+} 
+
+#options input {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+}
+
+#options h2 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#options ul {
+    list-style-type: none;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 0 0 -45px;
+}
+
+#options li {
+    line-height: 30px;
+}
+
+#options button {
+    width: 150px;
+    height: 40px;
+    margin: 20px 0 0 40px;
+    color: #fff;
+    background-color: #C32026;
+    border: none;
+    border-radius: 5px;
+}
+
+/*--------------------- end Purchase page ---------------------------*/
+
+/*--------------------- Contact page ---------------------------*/
+#block1_Contact {
+    width: 100%;
+    padding: 100px 0 50px 0;
+    position: relative;
+    background-color: #191919;
+    
+}
+
+.blockText_Contact {
+    width: 85%;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: thin;
+    line-height: 35px;
+    color: #ffc518;
+    text-align: center;
+}
+
+#background {
+    width: 100%;
+    background-color: #191919;
+    padding-bottom: 50px;
+}
+
+form {
+    width: 250px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 50px;
+}
+
+label {
+    display: inline-block;
+    margin: 20px 0; 
+    padding-top: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+input, textarea {
+    width: 240px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    background-color: #C32026;
+    color: #fff;
+}
+
+textarea {
+    height: 80px;
+}
+
+form button {
+    width: 100px;
+    margin: 30px auto 0 13px;
+    height: 40px;
+    text-align: center;
+    background-color: #C32026;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*--------------------- end Contact page ---------------------------*/
+
+/*--------------------- Credits page ---------------------------*/
+
+#credits {
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#credits p {
+    line-height: 2;
+}
+
+.creditName {
+    display: block;
+    font-weight: 600;
+}
+
+/*--------------------- end Credits page ---------------------------*/
+
+footer {
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    padding-top: 40px;
+    position: relative;
+}
+
+footer ul, footer li, footer a {
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+    line-height: 20px;
+}
+
+footer .underline {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 110%;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    display: block;
+    margin-top: 10px;
+}
+
+footer #socialIcons {
+    width: 175px;
+    margin: auto auto auto -250px;
+}
+
+footer ul {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shrink {
+    width: 30px;
+    padding: 0 5px;
+}
+
+
