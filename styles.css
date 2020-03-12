@@ -279,11 +279,12 @@ header h2 {
 
 #bookkeeping {
     background: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
 }
 
 #bookkeeping img {
     display: none;
-    width: 50%;
+    width: 60%;
     margin: -10vh auto 40px auto;
     transition: 0.5s;
 }
