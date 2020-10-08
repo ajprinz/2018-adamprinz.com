@@ -205,7 +205,7 @@ header h2 {
     transition: 0.5s;
 }
 
-#ctfnation  p .label {
+#ctfnation .label {
     display: none;
     font-size: 1.4em;
     margin: -14vh auto 0 auto;
