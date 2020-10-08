@@ -200,7 +200,7 @@ header h2 {
 
 #ctfnation  img {
     display: none;
-    width: 70%;
+    width: 60%;
     margin: -10vh auto 40px auto;
     transition: 0.5s;
 }
@@ -208,7 +208,7 @@ header h2 {
 #ctfnation .label {
     display: none;
     font-size: 1.4em;
-    margin: -14vh auto 0 auto;
+    margin: -13vh auto 0 auto;
     height: 50px;
     transition: 0.5s;
 }
