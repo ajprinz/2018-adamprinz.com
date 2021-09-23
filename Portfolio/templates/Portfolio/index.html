@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBBQKLJ1DF"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FBBQKLJ1DF');
+      </script>
+      <title>Adam Prinz | UI/UX Designer</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Hi, I’m Adam! I’m a UI/UX Designer and Front End Developer based in San Diego, California. I transform complex design problems into powerful and unique stories.">
+      <link rel="shortcut icon" type="image/png" href="{% static 'assets/img/favicon.ico' %}"/>
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/styles.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/all.css' %}"> <!-- FontAwesome -->
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/slick/slick.css' %}"/>
+      <link rel="stylesheet" type="text/css" href="{% static 'assets/slick/slick-theme.css' %}"/>
+      <script src="{% static 'assets/js/jquery-3.5.1.min.js' %}"></script>
+      <script src="{% static 'assets/js/three.min.js' %}"></script>
+      <script src="{% static 'assets/js/gsap.min.js' %}"></script>
+      <script src="{% static 'assets/js/ScrollTrigger.min.js' %}"></script>
+      <script type="module" src="{% static 'assets/js/three.module.js' %}"></script>
+      <script type="module" src="{% static 'assets/js/STLLoader.js' %}"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      <script src="{% static 'assets/js/main.js' %}"></script>
+    </head>
+    <body>
+      <header>
+        <h1 class="accessibility">Adam Prinz</h1>
+        <a href="#"><img id="logo" src="{% static 'assets/img/adamprinzlogo.svg'%}" alt="Adam Prinz Logo as a stylized A"></a>
+        <nav>
+          <h2 class="accessibility">Navigation</h2>
+          <div id="menu-btn">
+            <span class="hamburgerMenu"></span>
+            <span class="hamburgerMenu"></span>
+            <span class="hamburgerMenu"></span>
+          </div>
+          <ul>
+            <li><a id="nav-home" href="#Intro">Home</a></li>
+            <li><a id="nav-projects" href="#Projects">Projects</a></li>
+            <li><a id="nav-contact" href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <script src="{% static 'assets/js/menu.js' %}"></script>
+      </header>
+      <div id="wrapper">
+        <script type="module" src="{% static 'assets/js/scene.js' %}"></script>
+        <section id="loading-screen">
+        	<div id="loader">
+            <img src="{% static 'assets/img/knighthorse6.gif' %}" alt="">
+          </div>
+        </section>
+        <section id="Intro" class="section-one">
+          <div class="left-block">
+            <h2 class="accessibility">Introduction</h2>
+            <p>Hi, I’m <span class="Frost-3">Adam</span>!</p>
+            <p>I’m a <span class="Frost-3">UI/UX Designer</span> and <span class="Frost-3">Front End Developer</span> based in San Diego, California.</p>
+            <div class="socialmedia">
+              <a href="https://www.linkedin.com/in/adamprinz/" target="_blank"><img class="icon" src="{% static 'assets/img/linkedin.svg' %}" alt="Follow Adam Prinz on LinkedIn"></a>
+              <a href="https://github.com/ajprinz" target="_blank"><img class="icon" src="{% static 'assets/img/github.svg' %}" alt="Follow Adam Prinz on GitHub"></a>
+              <a href="https://www.behance.net/ajprinz/" target="_blank"><img class="icon" src="{% static 'assets/img/behance.svg' %}" alt="Follow Adam Prinz on Behance"></a>
+            </div>
+          </div>
+        </section>
+        <section class="section-two"></section>
+        <section id="Intro-2" class="section-three">
+          <div class="left-block">
+            <h2 class="accessibility">Introduction Continued</h2>
+            <p>I transform complex design problems into powerful and unique stories.</p>
+          </div>
+        </section>
+        <section class="section-five"></section>
+        <section id="Projects" class="section-six">
+          <div id="projects-header">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <h2>Projects <span style="font-weight:100;">&#8212; C:\Users\adamprinz\Portfolio</span></h2>
+          </div>
+          <div id="projects-bar">
+            <div id="projects-bar-content">
+              <ul>
+                <li><i class="fa-custom fas fa-book"></i>Projects</li>
+                <ul>
+                  <li><i class="fa-custom fas fa-folder-open"></i>Parrot</li>
+                    <ul>
+                      <li><a href="#parrot-photos"><i class="fa-custom fas fa-file-image"></i>Photos</a></li>
+                      <li><a href="#parrot-problem"><i class="fa-custom fas fa-file-alt"></i>Problem</a></li>
+                      <li><a href="#parrot-solution"><i class="fa-custom fas fa-file-alt"></i>Solution</a></li>
+                      <li><a href="#parrot-demo"><i class="fa-custom fas fa-file-code"></i>Demo</a></li>
+                    </ul>
+                  <li><i class="fa-custom fas fa-folder-open"></i>CTFNation</li>
+                    <ul>
+                      <li><a href="#ctfnation-photos"><i class="fa-custom fas fa-file-image"></i>Photos</a></li>
+                      <li><a href="#ctfnation-problem"><i class="fa-custom fas fa-file-alt"></i>Problem</a></li>
+                      <li><a href="#ctfnation-solution"><i class="fa-custom fas fa-file-alt"></i>Solution</a></li>
+                      <li><a href="#ctfnation-demo"><i class="fa-custom fas fa-file-code"></i>Demo</a></li>
+                    </ul>
+                  <li><i class="fa-custom fas fa-folder-open"></i>Captain Fatty's</li>
+                    <ul>
+                      <li><a href="#captainfattys-photos"><i class="fa-custom fas fa-file-image"></i>Photos</a></li>
+                      <li><a href="#captainfattys-problem"><i class="fa-custom fas fa-file-alt"></i>Problem</a></li>
+                      <li><a href="#captainfattys-solution"><i class="fa-custom fas fa-file-alt"></i>Solution</a></li>
+                      <li><a href="#captainfattys-demo"><i class="fa-custom fas fa-file-code"></i>Demo</a></li>
+                    </ul>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div id="projects-gallery">
+            <div class="center-block">
+              <div id="parrot-photos" class="slider">
+                <div><img src="{% static 'assets/img/parrot-screenshot-1.PNG' %}" alt="Parrot homescreen screenshot"></div>
+                <div><img src="{% static 'assets/img/parrot-mockup2.jpg' %}" alt="Parrot video call mockup sharing a youtube cooking video."></div>
+                <div><img src="{% static 'assets/img/parrot-screenshot-2.PNG' %}" alt="Parrot video call user interface screenshot"></div>
+                <div><img src="{% static 'assets/img/parrot-screenshot-3.PNG' %}" alt="Parrot video call screen sharing an internet browser window screenshot"></div>
+                <div><img src="{% static 'assets/img/parrot-screenshot-4.PNG' %}" alt="Parrot video call with chat room screenshot"></div>
+                <div><img src="{% static 'assets/img/parrot-screenshot-5.PNG' %}" alt="Parrot video call on mobile device screenshot"></div>
+                <div><img src="{% static 'assets/img/parrot-screenshot-6.PNG' %}" alt="Parrot chat room on mobile device screenshot"></div>
+                <div><img src="{% static 'assets/img/parrot-screenshot-7.PNG' %}" alt="Parrot homescreen on mobile screenshot"></div>
+              </div>
+              <h3>Parrot</h3>
+              <div class="description">
+                <h4 id="parrot-problem">Problem</h4>
+                <p>In 2020, the CoVid-19 epidemic forced families, friends, and coworkers to social distance themselves and work remotely. People missed more than meetings, they missed life moments. Multiple video conferencing apps commanded the market including Zoom, Google, Facebook, and Discord. Unfortunately, these products still have major flaws in the fundamental user experience, accessibility, and data security.</p>
+                <h4 id="parrot-solution">Solution</h4>
+                <p>Parrot is designed to put the user and those life moments first. With only one click from the home page or from an email invitation, the user instantly joins the video call in their web browser. For maximum accessibility, security, and stability, I designed and developed Parrot to have no need for mobile or desktop applications, no need for a login or data collection, and no need for on-site servers. If you would like to talk more about this project, please reach out with the form below.</p>
+                <a id="parrot-demo" class="button" href="https://parrotnetworks.org" target="_blank">View Live Website</a>
+              </div>
+            </div>
+            <div class="center-block">
+              <div id="ctfnation-photos" class="slider">
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-1.PNG' %}" alt="CTFNation homescreen screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-2.PNG' %}" alt="CTFNation homescreen about section screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-3.PNG' %}" alt="CTFNation homescreen pricing section screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-4.PNG' %}" alt="CTFNation user sign up screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-5.PNG' %}" alt="CTFNation user sign up tooltip on hover screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-6.PNG' %}" alt="CTFNation user login screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-7.PNG' %}" alt="CTFNation user reset password screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-8.PNG' %}" alt="CTFNation user dashboard screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-9.PNG' %}" alt="CTFNation user matchmaking game selection screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-10.PNG' %}" alt="CTFNation user matchmaking lobby screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-11.PNG' %}" alt="CTFNation user matchmaking match found alert screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-12.PNG' %}" alt="CTFNation user in game screenshot"></div>
+                <div><img src="{% static 'assets/img/ctfnation-screenshot-13.PNG' %}" alt="CTFNation user profile screenshot"></div>
+              </div>
+              <h3>CTFNation</h3>
+              <div class="description">
+                <h4 id="ctfnation-problem">Problem</h4>
+                <p>In 2018, the field of cyber security was quickly gaining popularity but there were hardly any resources for beginners to learn the skills step by step in an entertaining way. A company called Hack The Box attempted to gamify the learning process with self guided real world exercises, however, the initial setup was complex and exercises lacked user assistance and community.</p>
+                <h4 id="ctfnation-solution">Solution</h4>
+                <p>I designed and developed an open source web platform for hackers and cybersecurity enthusiasts to compete for glory in a variety of multiplayer games within a series of vulnerable virtual machines.</p>
+                <p>With an intuitive 3-step interface the user can easily select a game type, match with other players, and copy/paste the needed Linux command for instant setup and access. After 3 years of development, Hack The Box announced a Beta version for a similar concept and I released my project to the public. If you would like to talk more about this project, please reach out with the form below.</p>
+                <a id="ctfnation-demo" class="button" href="https://ctfnation.herokuapp.com/" target="_blank">View Demo</a>
+              </div>
+            </div>
+            <div class="center-block">
+              <div id="captainfattys-photos" class="slider">
+                <div><img src="{% static 'assets/img/captainfattyswebsite-compressed.gif' %}" alt="Captain Fatty's Brewery homescreen beer pouring gif"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-1.PNG' %}" alt="Captain Fatty's Brewery homescreen meet the captain section screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-2.PNG' %}" alt="Captain Fatty's Brewery homescreen what's on tap section screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-3.PNG' %}" alt="Captain Fatty's Brewery homescreen subscribe section screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-4.PNG' %}" alt="Captain Fatty's Brewery homescreen footer with navigation and business details screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-5.PNG' %}" alt="Captain Fatty's Brewery homescreen with open navigation menu screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-6.PNG' %}" alt="Captain Fatty's Brewery homescreen with open navigation menu and highlight hover selection screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-7.PNG' %}" alt="Captain Fatty's Brewery On Tap page screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-8.PNG' %}" alt="Captain Fatty's Brewery On Tap page with beer selection screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-9.PNG' %}" alt="Captain Fatty's Brewery Events page screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-10.PNG' %}" alt="Captain Fatty's Brewery Events page with dates and times screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-11.PNG' %}" alt="Captain Fatty's Brewery Shop page on mobile device screenshot"></div>
+                <div><img src="{% static 'assets/img/captainfattys-screenshot-12.PNG' %}" alt="Captain Fatty's Brewery Shop page on mobile device with merchandise screenshot"></div>
+              </div>
+              <h3>Captain Fatty’s Brewery</h3>
+              <div class="description">
+                <h4 id="captainfattys-problem">Problem</h4>
+                <p>In 2017, I stumbled upon a small craft brewery inconveniently placed between busy loading docks and the local police station. They had been open for four years already and yet their web presence was near invisible. At the time, their website was missing the hours of operation, lacked cohesive branding across pages, and remained unresponsive to mobile platforms.</p>
+                <h4 id="captainfattys-solution">Solution</h4>
+                <p>As a class project, I later designed and developed a fully functional conceptual website with a responsive mobile first design and robust SEO markup. The hours of operation were now displayed at the top on all pages along with a consistent brand personality and color scheme. I also created a simpler navigation architecture for the user to quickly find new events, beers, and merchandise. If you would like to talk more about this project, please reach out with the form below.</p>
+                <a id="captainfattys-demo" class="button" href="https://ajprinz.github.io/Captain-Fattys-Concept/" target="_blank">View Demo</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-seven h0 grey"></section>
+        <section class="section-eight h0 grey"></section>
+        <section id="Contact" class="section-nine">
+          <div class="end-left-block">
+            <h2 class="accessibility">Contact</h2>
+            <p>Do you have any questions or are you interested in working with me?</p>
+            <p>Just fill out this form.</p>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="form-actions">
+                  <button type="submit">Send</button>
+                </div>
+            </form>
+          </div>
+          <div class="profilepicture"></div>
+        </section>
+      </div>
+      <footer>
+          <p>Copyright &copy;2021 adamprinz.com</p>
+      </footer>
+      {% load sweetify %}
+      {% sweetify %}
+      <script src="{% static 'assets/js/main.js' %}"></script>
+      <script type="text/javascript" src="{% static 'assets/slick/slick.min.js' %}"></script>
+    </body>
+
+</html>
